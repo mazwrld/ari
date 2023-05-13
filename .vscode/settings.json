@@ -1,5 +1,8 @@
 {
   "typescript.tsdk": "../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": ["callees", "clsx", "cmdk", "ianvs", "lucide", "typecheck"]
+  "cSpell.words": ["callees", "clsx", "cmdk", "ianvs", "lucide", "typecheck"],
+  "files.exclude": {
+    "**/node_modules": true
+  }
 }

@@ -1,22 +1,26 @@
-# next-template
+# Ari
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+This project is my portfolio website. It is built with Next.js and Tailwind CSS. I'm using [shadcd's](https://ui.shadcn.com/) ui library as a base for the project.
 
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/shadcn/next-template
+# Clone the repository
+git clone **REPO**
+
+# Navigate to the directory
+cd **REPO**
+
+# Install the dependencies
+pnpm install
 ```
 
-## Features
+## Scripts
 
-- Radix UI Primitives
-- Tailwind CSS
-- Fonts with `next/font`
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Automatic import sorting with `@ianvs/prettier-plugin-sort-imports`
-- Tailwind CSS class sorting, merging and linting.
+```bash
+# Start the development server
+pnpm dev
+```
 
 ## License
 

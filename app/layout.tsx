@@ -8,7 +8,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
   title: {
-    default: '🇨🇦 Maz',
+    default: '🇨🇦 maz.dev',
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,

@@ -1,5 +1,9 @@
 # Ari
 
+<p align="center">
+  <img src="public/logo.png" alt="Logo" width="200" height="200">
+</p>
+
 This project is my portfolio website. It is built with Next.js and Tailwind CSS. I'm using [shadcd's](https://ui.shadcn.com/) ui library as a base.
 
 ## Tech Stack

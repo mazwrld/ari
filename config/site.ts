@@ -5,8 +5,8 @@ export const siteConfig = {
   description: "Maz's personal portfolio",
   mainNav: [
     {
-      title: 'Home',
-      href: '/',
+      title: '',
+      href: '',
     },
   ],
   links: {

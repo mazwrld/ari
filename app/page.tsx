@@ -3,12 +3,13 @@ import ProfileImg from '@/public/me.png'
 
 import { stack } from '@/config/stack'
 import Card from '@/components/card'
+import { Footer } from '@/components/footer'
 import { MotionDiv } from '@/app/use-client'
 
 export default function IndexPage() {
   return (
     <section>
-      <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
+      <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden border-t py-6 text-center md:py-0">
         <MotionDiv
           initial={{ opacity: 0 }}
           animate={{
@@ -50,6 +51,7 @@ export default function IndexPage() {
         </h2>
         <Card items={stack} />
       </div>
+      <Footer />
     </section>
   )
 }

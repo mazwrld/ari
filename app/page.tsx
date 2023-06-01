@@ -39,13 +39,15 @@ export default function IndexPage() {
           <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-400">
             Software Developer
           </h2>
-          <h1 className="px-10 text-3xl font-semibold md:text-4xl lg:text-6xl">
+          <h1 className="px-10 text-3xl font-semibold tracking-[1px] md:text-4xl lg:text-6xl">
             Mazen Mahari
           </h1>
         </div>
       </div>
-      {/* display the cards component */}
-      <div className="mx-auto mt-10 flex max-w-6xl flex-wrap justify-center">
+      <div className="max-w-8xl mx-auto mt-5 flex flex-wrap justify-center gap-4">
+        <h2 className="font-cal my-2 w-full text-center text-2xl uppercase tracking-[5px]">
+          favorite technologies
+        </h2>
         <Card items={stack} />
       </div>
     </section>

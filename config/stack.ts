@@ -15,15 +15,14 @@ export const stack = [
   },
   {
     name: 'typescript',
-    href: 'https://www.typescriptlang.org/',
     logo: '/stack-icons/typescript.svg',
+    href: 'https://www.typescriptlang.org/',
     description: `Firmly believe TypeScript will helps me be a better web developer. The "strictness" of TypeScript leads to smoother building and debugging experience.`,
   },
   {
     name: 'tailwindcss',
     logo: '/stack-icons/tailwindcss.svg',
     href: 'https://tailwindcss.com/',
-    description: `Tailwind CSS is a utility-first CSS framework that helps you build
-    beautiful, responsive designs without any extra configuration. It's built with utility-first principles, and is completely customizable and extendable.`,
+    description: `Tailwind CSS is a utility-first CSS framework. I can't imagine building a website without it. It's a great tool for rapid prototyping.`,
   },
 ]

@@ -8,7 +8,7 @@ import { MotionDiv } from '@/app/use-client'
 
 export default function IndexPage() {
   return (
-    <section>
+    <>
       <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden border-t py-6 text-center md:py-0">
         <MotionDiv
           initial={{ opacity: 0 }}
@@ -45,13 +45,21 @@ export default function IndexPage() {
           </h1>
         </div>
       </div>
-      <div className="max-w-8xl mx-auto mt-5 flex flex-wrap justify-center gap-4">
-        <h2 className="font-cal my-2 w-full text-center text-2xl uppercase tracking-[5px]">
-          favorite technologies
+      <div className="mb-10 text-center md:text-center">
+        <h2 className="text-xl font-semibold md:text-2xl lg:text-2xl">
+          The best of the full stack TypeScript ecosystem...
         </h2>
+        <h3 className="mt-2 text-3xl font-bold tracking-tight md:text-5xl lg:text-5xl">
+          ...with MODULARITY in mind
+        </h3>
+        <p className="mt-4 text-base md:text-lg">
+          The T3 stack is in my opinion the best way to build a full stack
+        </p>
+      </div>
+      <div className="max-w-8xl mx-auto mt-5 flex flex-wrap justify-center gap-4">
         <Card items={stack} />
       </div>
       <Footer />
-    </section>
+    </>
   )
 }

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ProfileImg from '@/public/me.png'
 
 import { stack } from '@/config/stack'
-import Card from '@/components/card'
+import { Card } from '@/components/card'
 import { Footer } from '@/components/footer'
 import { MotionDiv } from '@/app/use-client'
 

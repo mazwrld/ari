@@ -7,7 +7,7 @@ interface CardProps {
   items: Stack
 }
 
-function Card({ items }: CardProps) {
+export function Card({ items }: CardProps) {
   return (
     <>
       {items?.map((item, index) => {
@@ -41,5 +41,3 @@ function Card({ items }: CardProps) {
     </>
   )
 }
-
-export default Card

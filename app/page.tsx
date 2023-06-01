@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import ProfileImg from '@/public/me.png'
 
+import { stack } from '@/config/stack'
+import Card from '@/components/card'
 import { MotionDiv } from '@/app/use-client'
 
 export default function IndexPage() {
@@ -41,6 +43,10 @@ export default function IndexPage() {
             Mazen Mahari
           </h1>
         </div>
+      </div>
+      {/* display the cards component */}
+      <div className="mx-auto mt-10 flex max-w-6xl flex-wrap justify-center">
+        <Card items={stack} />
       </div>
     </section>
   )

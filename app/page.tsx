@@ -53,7 +53,8 @@ export default function IndexPage() {
           ...with MODULARITY in mind
         </h3>
         <p className="mt-4 text-base md:text-lg">
-          The T3 stack is in my opinion the best way to build a full stack
+          The T3 stack is in my opinion the best way to build a full stack web
+          apps
         </p>
       </div>
       <div className="max-w-8xl mx-auto mt-5 flex flex-wrap justify-center gap-4">

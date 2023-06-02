@@ -19,9 +19,9 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 6.0.2
+          version: 8.6.0
           run_install: |
-            - recursive: true
+            - recursive: fasle
               args: [--frozen-lockfile, --strict-peer-dependencies]
 
       - name: Get pnpm store directory

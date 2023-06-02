@@ -1,6 +1,8 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 
 jobs:
   cache-and-install:
@@ -13,20 +15,17 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 16
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v2.0.1
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 8.6.0
-          run_install: |
-            - recursive: true
-            args: [--frozen-lockfile]
+          version: 7
+          run_install: false
 
       - name: Get pnpm store directory
         id: pnpm-cache
-        shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 

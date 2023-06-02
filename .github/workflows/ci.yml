@@ -21,8 +21,8 @@ jobs:
         with:
           version: 8.6.0
           run_install: |
-            - recursive: fasle
-              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - recursive: true
+            args: [--frozen-lockfile]
 
       - name: Get pnpm store directory
         id: pnpm-cache

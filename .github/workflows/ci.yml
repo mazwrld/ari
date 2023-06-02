@@ -17,6 +17,13 @@ jobs:
         with:
           node-version: 20
 
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: true
+
       - name: Install dependencies
         run: pnpm install
 

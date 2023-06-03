@@ -2,16 +2,16 @@ export type Stack = typeof stack
 
 export const stack = [
   {
-    name: 'nextjs',
-    logo: '/stack-icons/nextjs.svg',
-    href: 'https://nextjs.org/',
-    description: `Next.js offers a lightly opinionated, heavily optimized approach to creating applications using React. It is a minimalistic framework for server-rendered React applications.`,
-  },
-  {
     name: 'react',
     logo: '/stack-icons/react.svg',
     href: 'https://react.dev/',
     description: `React is a JavaScript library for building user interfaces. I use it to build reusable UI components. I love the community and the ecosystem.`,
+  },
+  {
+    name: 'nextjs',
+    logo: '/stack-icons/nextjs.svg',
+    href: 'https://nextjs.org/',
+    description: `Next.js offers a lightly opinionated, heavily optimized approach to creating applications using React. It is a minimalistic framework for server-rendered React applications.`,
   },
   {
     name: 'typescript',

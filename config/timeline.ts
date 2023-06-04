@@ -3,37 +3,30 @@ export type Timeline = typeof timelineData
 export const timelineData = [
   {
     year: 'Today',
-    title: 'YouTube Content Creator',
-    duration: '6 years',
+    title: 'Job Search 😩',
+    duration: '7 years',
     details:
-      'My humble attempt at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to help those coming behind me.',
+      "I'm currently looking for a full-time software developer position. I'm open to any opportunities that will allow me to grow as a developer. Meanwhile, I'm working on personal projects to improve my skills and knowledge.",
   },
   {
-    year: 'Today',
-    title: 'Solo Indie Developer',
-    duration: '4 years',
+    year: '2022',
+    title: 'Software Engineer Internship 🚀',
+    duration: '4 months',
     details:
-      "I'm a solo indie developer building software for myself and clients to showcase on YouTube. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code.",
-  },
-  {
-    year: '2019',
-    title: 'Software Engineer',
-    duration: '2 years',
-    details:
-      'I helped build an enterprise application for a Fortune 500 company in an Agile team setting. Our tech stack consisted of TypeScript, Angular, Java, Gradle, and a handful of other languages and tools.',
+      'I contributed to the development of an enterprise application for the University of Manitoba as part of an Agile team. Our technology stack included TypeScript, Angular, Node, and several other libraries, enabling us to create a comprehensive full-stack application.',
   },
   {
     year: '2018',
-    title: "Bachelor's Degree in Computer Science",
-    duration: '5 years',
+    title: 'Diploma in Business Information Technology 🎓',
+    duration: '3 years',
     details:
-      'I pursued the knowledge that a computer science degree had to offer. I learned about computer architecture, computer science theory, an array of programming, and aspects of artificial intelligence.',
+      'I pursued the knowledge that a computer science degree had to offer. I learned about information technology, covering areas such as application development, database management, network management, and web development, and aspects of business. I also learned how to learn, which is a skill that I will carry with me for the rest of my life.',
   },
   {
-    year: '2013',
-    title: 'First Line of Code',
+    year: '2017',
+    title: 'First Line of Code 👨🏾‍💻',
     duration: 'the beginning',
     details:
-      "I wrote my first line of real code that started this journey into digital craftsmanship that I never could've imagined, especially as someone who never saw themselves as anything other than a blue collar worker.",
+      'My initial exposure to coding occurred when my high school provided me with the opportunity to transfer to another school that offered a computer science program. I arrived at the new school during the later stages of their final project. I distinctly recall feeling utterly perplexed as the students delved into the concept of Object-Oriented Programming (OOP).',
   },
 ]

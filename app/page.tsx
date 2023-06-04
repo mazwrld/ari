@@ -2,8 +2,10 @@ import Image from 'next/image'
 import ProfileImg from '@/public/me.png'
 
 import { stack } from '@/config/stack'
+import { timelineData } from '@/config/timeline'
 import { Card } from '@/components/card'
 import { Footer } from '@/components/footer'
+import { Timeline } from '@/components/timeline'
 import { MotionDiv } from '@/app/use-client'
 
 export default function IndexPage() {
@@ -45,6 +47,7 @@ export default function IndexPage() {
           </h1>
         </div>
       </div>
+      <Timeline timeline={timelineData} />
       <div className="mb-10 text-center md:text-center">
         <h2 className="text-xl font-semibold md:text-2xl lg:text-2xl">
           The best of the full stack TypeScript ecosystem...

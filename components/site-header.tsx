@@ -21,7 +21,7 @@ export function SiteHeader() {
               <div
                 className={buttonVariants({
                   size: 'sm',
-                  variant: 'ghost',
+                  variant: 'transparent',
                 })}
               >
                 <Icons.gitHub className="h-5 w-5" />
@@ -36,7 +36,7 @@ export function SiteHeader() {
               <div
                 className={buttonVariants({
                   size: 'sm',
-                  variant: 'ghost',
+                  variant: 'transparent',
                 })}
               >
                 <Icons.twitter className="h-5 w-5 fill-current" />
@@ -51,7 +51,7 @@ export function SiteHeader() {
               <div
                 className={buttonVariants({
                   size: 'sm',
-                  variant: 'ghost',
+                  variant: 'transparent',
                 })}
               >
                 <Icons.linkedIn className="h-5 w-5 fill-current" />
@@ -66,7 +66,7 @@ export function SiteHeader() {
               <div
                 className={buttonVariants({
                   size: 'sm',
-                  variant: 'ghost',
+                  variant: 'transparent',
                 })}
               >
                 <Icons.discord className="h-5 w-5 fill-current" />

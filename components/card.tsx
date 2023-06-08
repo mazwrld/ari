@@ -9,7 +9,7 @@ interface CardProps {
 
 export function Card({ items }: CardProps) {
   return (
-    <>
+    <div className="max-w-8xl mx-auto mt-5 flex flex-wrap justify-center gap-4">
       {items?.map((item, index) => {
         return (
           <div key={index} className="max-w-sm rounded-lg border shadow">
@@ -38,6 +38,6 @@ export function Card({ items }: CardProps) {
           </div>
         )
       })}
-    </>
+    </div>
   )
 }

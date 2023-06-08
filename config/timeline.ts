@@ -4,7 +4,7 @@ export const timelineData = [
   {
     year: 'Today',
     title: 'Job Search 😩',
-    duration: '7 years',
+    duration: 'ongoing',
     details:
       "I'm currently looking for a full-time software developer position. I'm open to any opportunities that will allow me to grow as a developer. Meanwhile, I'm working on personal projects to improve my skills and knowledge.",
   },

@@ -7,7 +7,7 @@ interface CardProps {
   items: Stack
 }
 
-export function Card({ items }: CardProps) {
+export default function Card({ items }: CardProps) {
   return (
     <div className="max-w-8xl mx-auto mt-5 flex flex-wrap justify-center gap-4">
       {items?.map((item, index) => {

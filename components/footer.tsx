@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
+
 import Logo from '@/public/logo.png'
 
-export function Footer() {
+export default function Footer() {
   return (
     <>
       <footer className="mt-10 border-t py-6 md:py-0">

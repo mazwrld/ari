@@ -1,10 +1,14 @@
 import { siteConfig } from '@/config/site'
-import { cn } from '@/lib/utils'
-import { SiteHeader } from '@/components/site-header'
-import { ThemeProvider } from '@/components/theme-provider'
+
+import cn from '@/lib/utils'
+
+import SiteHeader from '@/components/site-header'
+import ThemeProvider from '@/components/theme-provider'
 
 import '@/styles/globals.css'
+
 import { Metadata } from 'next'
+
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {

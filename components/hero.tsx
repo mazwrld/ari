@@ -1,9 +1,10 @@
 import Image from 'next/image'
+
 import ProfileImg from '@/public/me.png'
 
 import { MotionDiv } from '@/components/utils/use-client'
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden border-t py-6 text-center md:py-0">
       <MotionDiv

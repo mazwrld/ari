@@ -13,7 +13,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: {
-    default: '🇨🇦 Maz | Dev | Ari',
+    default: '🇨🇦 Maz',
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,

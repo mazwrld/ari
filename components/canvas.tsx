@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 
 import { OrbitControls } from '@react-three/drei'
-import { Canvas, useLoader } from '@react-three/fiber'
+import { Canvas, useLoader, type MeshProps } from '@react-three/fiber'
 import { useMotionValue, useSpring } from 'framer-motion'
 import { motion } from 'framer-motion-3d'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
@@ -12,7 +12,7 @@ export default function CanvasComponent() {
   return (
     <Canvas>
       <OrbitControls enableZoom={false} enablePan={false} />
-      <ambientLight intensity={0.3} />
+      <ambientLight intensity={0.1} />
       <directionalLight position={[2, 1, 1]} />
       <Cube />
     </Canvas>
@@ -20,7 +20,7 @@ export default function CanvasComponent() {
 }
 
 function Cube() {
-  const mesh = useRef<THREE.Mesh>(null)
+  const mesh = useRef<MeshProps>(null)
   const options = {
     damping: 20,
   }

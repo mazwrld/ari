@@ -17,7 +17,7 @@ export const timelineData = [
   },
   {
     year: '2018',
-    title: 'Diploma in Business Information Technology 🎓',
+    title: 'Diploma 🎓',
     duration: '3 years',
     details:
       'I was dedicated to obtaining my computer science degree and eagerly absorbing valuable knowledge.📚 Immersed in information technology, I delved into subjects like app development, database management, network administration, and web development. 💻📱🌐 I even glimpsed the business aspects.💼📈 The most invaluable skill I acquired was the ability to learn.🎓📚🧠 It will stay with me for a lifetime.',

@@ -5,19 +5,19 @@ export const stack = [
     name: 'react',
     logo: '/stack-icons/react.svg',
     href: 'https://react.dev/',
-    description: `I love react because of they are not afraid to break things it means the web will be a better place for it. The community is passionate and the ecosystem is thriving.`,
+    description: `I love react because they are not afraid to break things if it means the web will be a better place for it. The community is passionate, and the ecosystem is thriving.`,
   },
   {
     name: 'nextjs',
     logo: '/stack-icons/nextjs.svg',
     href: 'https://nextjs.org/',
-    description: `Next.js is really good. It's kinda like the Apple of the web development world. It's not perfect, but it's the best we have right now.`,
+    description: `Next.js is really good. It's like the Apple of the web development world. It's not perfect, but it's the best we have right now.`,
   },
   {
     name: 'typescript',
     logo: '/stack-icons/typescript.svg',
     href: 'https://www.typescriptlang.org/',
-    description: `Firmly believe TypeScript will helps me be a better web developer. The "strictness" of TypeScript leads to smoother building and debugging experience.`,
+    description: `I firmly believe TypeScript will helps me be a better web developer. The "strictness" of TypeScript leads to smoother building and debugging experience.`,
   },
   {
     name: 'tailwindcss',
@@ -37,6 +37,6 @@ export const stack = [
     logo: '/stack-icons/express.svg',
     href: 'https://expressjs.com/',
     description:
-      'I like working with express if building an app that needs a backend and for whatever reason I am not able to use next. Nowadays I am playing with Bun.',
+      'I like working with express if building an app that needs a backend. If for whatever reason I am not able to use next. Nowadays, I am playing with Bun.',
   },
 ]

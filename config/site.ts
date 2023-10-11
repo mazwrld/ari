@@ -13,6 +13,5 @@ export const siteConfig = {
     x: 'https://twitter.com/mazenwrld',
     github: 'https://github.com/mazwrld',
     linkedin: 'https://www.linkedin.com/in/mazen-mahari-63958717a/',
-    discord: 'https://discord.com/users/485555868646113290',
   },
 }

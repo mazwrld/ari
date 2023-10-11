@@ -1,11 +1,9 @@
 import { stack } from '@/config/stack'
-import { timelineData } from '@/config/timeline'
 
 import CanvasComponent from '@/components/canvas'
 import Card from '@/components/card'
 import Footer from '@/components/footer'
 import Hero from '@/components/hero'
-import Timeline from '@/components/timeline'
 
 export default function IndexPage() {
   return (
@@ -23,15 +21,14 @@ export default function IndexPage() {
           apps
         </p>
       </div> */}
-      <div className="flex min-h-screen flex-col items-center justify-center py-2">
-        <div className="flex w-full flex-col md:flex-row">
-          <div className="md:w-1/2">
-            <CanvasComponent />
-          </div>
-          <div className="md:w-1/2">
-            <Timeline timeline={timelineData} />
-          </div>
+
+      <div className="flex w-full flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <CanvasComponent />
         </div>
+        {/* <div className="md:w-1/2">
+            <Timeline timeline={timelineData} />
+          </div> */}
       </div>
       <Card items={stack} />
       <Footer />

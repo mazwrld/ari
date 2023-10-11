@@ -5,13 +5,13 @@ export const stack = [
     name: 'react',
     logo: '/stack-icons/react.svg',
     href: 'https://react.dev/',
-    description: `React is a JavaScript library for building user interfaces. I use it to build reusable UI components. I love the community and the ecosystem.`,
+    description: `I love react because of they are not afraid to break things it means the web will be a better place for it. The community is passionate and the ecosystem is thriving.`,
   },
   {
     name: 'nextjs',
     logo: '/stack-icons/nextjs.svg',
     href: 'https://nextjs.org/',
-    description: `Next.js offers a lightly opinionated, heavily optimized approach to creating applications using React. It is a minimalistic framework for server-rendered React applications.`,
+    description: `Next.js is really good. It's kinda like the Apple of the web development world. It's not perfect, but it's the best we have right now.`,
   },
   {
     name: 'typescript',
@@ -24,5 +24,19 @@ export const stack = [
     logo: '/stack-icons/tailwindcss.svg',
     href: 'https://tailwindcss.com/',
     description: `Tailwind CSS is a utility-first CSS framework. I can't imagine building a website without it. It's a great tool for rapid prototyping.`,
+  },
+  {
+    name: 'git',
+    logo: '/stack-icons/git.svg',
+    href: 'https://git-scm.com/',
+    description:
+      'Git is git. Not much to say here. I like github and I tolerate gitlab.',
+  },
+  {
+    name: 'express',
+    logo: '/stack-icons/express.svg',
+    href: 'https://expressjs.com/',
+    description:
+      'I like working with express if building an app that needs a backend and for whatever reason I am not able to use next. Nowadays I am playing with Bun.',
   },
 ]

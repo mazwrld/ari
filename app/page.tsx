@@ -1,6 +1,6 @@
 import { stack } from '@/config/stack'
 
-import CanvasComponent from '@/components/canvas'
+import About from '@/components/about'
 import Card from '@/components/card'
 import Footer from '@/components/footer'
 import Hero from '@/components/hero'
@@ -22,14 +22,7 @@ export default function IndexPage() {
         </p>
       </div> */}
 
-      <div className="flex w-full flex-col md:flex-row">
-        <div className="md:w-1/2">
-          <CanvasComponent />
-        </div>
-        {/* <div className="md:w-1/2">
-            <Timeline timeline={timelineData} />
-          </div> */}
-      </div>
+      <About />
       <Card items={stack} />
       <Footer />
     </>

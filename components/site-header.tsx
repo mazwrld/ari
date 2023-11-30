@@ -10,12 +10,12 @@ import ThemeToggle from '@/components/theme-toggle'
 
 export default function SiteHeader() {
   return (
-    <header className="relative z-[999]">
-      <div className="border-opacity/40 bg-opacity/80 dark:bg-opacity/75 fixed left-1/2 top-0 h-[4.5rem] w-full rounded-none border border-white bg-white shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] dark:border-black/40 dark:bg-gray-950 sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full">
-        <div className="container flex h-full items-center space-x-4 sm:justify-between sm:space-x-0">
+    <header className="z-50 flex items-center justify-center">
+      <nav className="border-opacity/40 bg-opacity/80 dark:bg-opacity/75 dark:border-black/4 absolute top-0  w-full rounded-none border shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] dark:bg-gray-950 sm:top-6 sm:w-[36rem] sm:rounded-full">
+        <div className="container flex h-12 items-center justify-between sm:justify-start">
           <MainNav items={siteConfig.mainNav} />
           <div className="flex flex-1 items-center justify-end space-x-4">
-            <nav className="flex items-center space-x-1">
+            <div className="flex items-center space-x-1">
               <Link
                 href={siteConfig.links.github}
                 target="_blank"
@@ -58,10 +58,10 @@ export default function SiteHeader() {
                 </div>
               </Link>
               <ThemeToggle />
-            </nav>
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   )
 }

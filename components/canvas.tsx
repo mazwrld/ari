@@ -20,9 +20,12 @@ export default function CanvasComponent() {
     offset: ['start start', 'end end'],
   })
   const rotation = useTransform(scrollYProgress, [0, 1], [0, Math.PI * 2])
-  const smoothProgress = useSpring(rotation, { damping: 20 })
+  const smoothProgress = useSpring(rotation, { damping: 40 })
   return (
-    <div ref={containerRef}>
+    <div
+      ref={containerRef}
+      className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+    >
       <Canvas>
         <OrbitControls enableZoom={false} enablePan={false} />
         <ambientLight intensity={0.1} />

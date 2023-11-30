@@ -16,7 +16,7 @@ interface MainNavProps {
 export default function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="hidden items-center space-x-2 md:flex">
+      <Link href="/" className="flex items-center space-x-2 md:flex">
         <Image src={Logo} height={34} width={34} alt="logo" />
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}

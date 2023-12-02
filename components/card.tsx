@@ -22,9 +22,9 @@ export default function Card({ items }: CardProps) {
                 alt="picture of technologies logo"
               />
               <Link href={item.href}>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                <span className="mb-2 text-2xl font-bold tracking-tight">
                   {item.name}
-                </h5>
+                </span>
               </Link>
               <p
                 title={item.description}

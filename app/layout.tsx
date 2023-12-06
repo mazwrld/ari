@@ -11,6 +11,8 @@ import type { Metadata, Viewport } from 'next'
 
 import { Analytics } from '@vercel/analytics/react'
 
+import Rays from '@/components/rays'
+
 export const metadata: Metadata = {
   title: {
     default: '🇨🇦 mazwrld.dev',
@@ -45,9 +47,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             'scrollbar-none min-h-screen scroll-smooth bg-background antialiased'
           )}
         >
-          <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:w-[68.75rem]"></div>
-          <div className="absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Rays />
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
               <div className="flex-1">{children}</div>

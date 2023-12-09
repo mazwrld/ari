@@ -1,3 +1,5 @@
+import '@/styles/rays.css'
+
 export default function Rays() {
   return (
     <div className="absolute left-0 top-0 w-full">

@@ -1,11 +1,8 @@
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'TypeScript',
   'React',
-  'Tailwind',
   'Next.js',
-  'Node.js',
+  'Tailwind',
+  'TypeScript',
   'Express',
   'Prisma ORM',
   'PostgreSQL',

@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site'
 
-import { inter } from '@/lib/fonts'
+import { fontSans } from '@/lib/fonts'
 import cn from '@/lib/utils'
 
 import Rays from '@/components/rays'
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body
           className={cn(
             'min-h-screen scroll-smooth font-sans antialiased',
-            inter.className
+            fontSans.variable
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

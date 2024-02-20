@@ -1,3 +1,5 @@
+import { Inter as FontSans } from 'next/font/google'
+
 import { siteConfig } from '@/config/site'
 
 import cn from '@/lib/utils'
@@ -12,6 +14,11 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 
 import Rays from '@/components/rays'
+
+export const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -41,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            'scrollbar-none min-h-screen scroll-smooth bg-background antialiased'
+            'scrollbar-none min-h-screen scroll-smooth bg-background font-sans antialiased'
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

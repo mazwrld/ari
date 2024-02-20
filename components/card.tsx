@@ -28,7 +28,7 @@ export default function Card({ items }: CardProps) {
               </Link>
               <p
                 title={item.description}
-                className="mb-3 overflow-hidden font-normal leading-6"
+                className="mb-3 overflow-hidden font-normal leading-6 text-muted-foreground"
               >
                 {item.description.length > 200
                   ? item.description.slice(0, 200) + '...'

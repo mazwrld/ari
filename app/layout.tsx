@@ -1,9 +1,9 @@
-import { Inter as FontSans } from 'next/font/google'
-
 import { siteConfig } from '@/config/site'
 
+import { inter } from '@/lib/fonts'
 import cn from '@/lib/utils'
 
+import Rays from '@/components/rays'
 import SiteHeader from '@/components/site-header'
 import ThemeProvider from '@/components/theme-provider'
 
@@ -12,8 +12,6 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 
 import { Analytics } from '@vercel/analytics/react'
-
-import Rays from '@/components/rays'
 
 export const metadata: Metadata = {
   title: {
@@ -32,11 +30,6 @@ export const metadata: Metadata = {
   },
 }
 
-export const fontSans = FontSans({
-  subsets: ['latin'],
-  variable: '--font-sans',
-})
-
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -48,7 +41,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            'min-h-screen scroll-smooth bg-background font-sans antialiased'
+            'min-h-screen scroll-smooth font-sans antialiased',
+            inter.className
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

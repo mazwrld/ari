@@ -1,3 +1,5 @@
+import { Inter as FontSans } from 'next/font/google'
+
 import { siteConfig } from '@/config/site'
 
 import cn from '@/lib/utils'
@@ -30,6 +32,11 @@ export const metadata: Metadata = {
   },
 }
 
+export const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -41,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            'scrollbar-none min-h-screen scroll-smooth bg-background antialiased'
+            'min-h-screen scroll-smooth bg-background font-sans antialiased'
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

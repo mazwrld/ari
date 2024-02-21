@@ -1,3 +1,9 @@
+import '@/styles/globals.css'
+
+import type { Metadata, Viewport } from 'next'
+
+import { Analytics } from '@vercel/analytics/react'
+
 import { siteConfig } from '@/config/site'
 
 import { fontSans } from '@/lib/fonts'
@@ -7,11 +13,12 @@ import Rays from '@/components/rays'
 import SiteHeader from '@/components/site-header'
 import ThemeProvider from '@/components/theme-provider'
 
-import '@/styles/globals.css'
-
-import type { Metadata } from 'next'
-
-import { Analytics } from '@vercel/analytics/react'
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: {
@@ -19,10 +26,6 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

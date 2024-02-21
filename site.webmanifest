@@ -1,0 +1,19 @@
+{
+  "name": "Mazen Mahari",
+  "short_name": "maz",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "8334x8334",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "8334x8334",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#d2f4c3",
+  "background_color": "#000",
+  "display": "standalone"
+}

@@ -25,12 +25,19 @@ export const metadata: Metadata = {
     default: '🇨🇦 mazwrld.dev',
     template: `%s - ${siteConfig.name}`,
   },
+  authors: [
+    {
+      name: 'Mazen Mahari',
+      url: 'https://www.mazwrld.dev/',
+    },
+  ],
   description: siteConfig.description,
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
+  manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
 interface RootLayoutProps {

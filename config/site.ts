@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: 'Mazen Mahari',
+  name: 'mazwlrd.dev',
   description: "Maz's personal portfolio and side project",
   url: 'https://www.mazwrld.dev',
   mainNav: [

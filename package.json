@@ -14,10 +14,10 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.1",
+    "@vercel/analytics": "^1.2.2",
     "class-variance-authority": "^0.4.0",
-    "clsx": "^1.2.1",
-    "cmdk": "^0.2.0",
+    "clsx": "^2.1.0",
+    "cmdk": "^0.2.1",
     "framer-motion": "^11.0.5",
     "lucide-react": "0.105.0-alpha.4",
     "mini-svg-data-uri": "^1.4.4",
@@ -26,9 +26,9 @@
     "react": "^18.2.0",
     "react-day-picker": "^8.6.0",
     "react-dom": "^18.2.0",
-    "sharp": ">=0.32.6",
-    "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.5"
+    "sharp": "^0.33.2",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",

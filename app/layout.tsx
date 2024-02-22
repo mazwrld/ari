@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import type { Metadata, Viewport } from 'next'
 
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { siteConfig } from '@/config/site'
 
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </div>
           </ThemeProvider>
           <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </>

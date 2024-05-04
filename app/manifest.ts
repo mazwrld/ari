@@ -1,10 +1,12 @@
 import { MetadataRoute } from 'next'
 
+import AppDetails from '@/package.json'
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'mazwrld.dev',
-    short_name: 'maz.dev',
-    description: "Maz's personal portfolio and side project",
+    name: AppDetails.name,
+    short_name: AppDetails.short_name,
+    description: AppDetails.description,
     start_url: '/',
     display: 'standalone',
     background_color: '#000',

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-
 import ProfileImg from '@/public/me.png'
 
 export default function Hero() {

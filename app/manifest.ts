@@ -1,5 +1,4 @@
 import { MetadataRoute } from 'next'
-
 import AppDetails from '@/package.json'
 
 export default function manifest(): MetadataRoute.Manifest {

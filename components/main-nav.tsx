@@ -1,12 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
 import Logo from '@/public/logo.png'
 
 import { NavItem } from '@/types/nav'
-
 import { siteConfig } from '@/config/site'
-
 import cn from '@/lib/utils'
 
 interface MainNavProps {

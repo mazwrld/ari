@@ -7,6 +7,7 @@ export default function Hero() {
   return (
     <>
       <Rays />
+      <Rays />
       <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden py-6 text-center md:py-0">
         <Image
           src={ProfileImg}

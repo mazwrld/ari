@@ -9,7 +9,7 @@ import ThemeToggle from '@/components/theme-toggle'
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-center">
-      <nav className="shadow-black-3 supports-[backdrop-filter] absolute top-0 w-full rounded-none border-b bg-background/50 shadow-lg backdrop-blur-[0.4rem] transition-all duration-200 sm:top-4 sm:w-[36rem] sm:rounded-full">
+      <nav className="shadow-black-3 supports-[backdrop-filter] absolute top-0 w-full rounded-none border-b bg-background/40 shadow-lg backdrop-blur-xl transition-all duration-200 sm:top-4 sm:w-[36rem] sm:rounded-full">
         <div className="container flex h-14 items-center justify-between sm:justify-start">
           <MainNav items={siteConfig.mainNav} />
           <div className="flex flex-1 items-center justify-end space-x-4">

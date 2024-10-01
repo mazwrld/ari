@@ -19,7 +19,7 @@ export default function Hero() {
         />
         <div className="z-20">
           <h2 className="pb-2 text-xs uppercase tracking-[15px] text-muted-foreground sm:text-xs">
-            Baby Developer
+            Life Long Learner
           </h2>
           <h1 className="px-10 text-3xl font-semibold tracking-[1px] sm:text-[2.4rem] lg:text-6xl">
             Mazen Mahari

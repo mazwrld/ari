@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import ProfileImg from '@/public/me.png'
 
 import Rays from '@/components/rays'
 
@@ -10,7 +9,7 @@ export default function Hero() {
       <Rays />
       <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden py-6 text-center md:py-0">
         <Image
-          src={ProfileImg}
+          src="https://github.com/mazwrld/ari/blob/main/public/me.png?raw=true"
           priority
           height={144}
           width={144}

@@ -7,7 +7,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  swcMinify: true,
+  images: {
+    domains: ['github.com', 'raw.githubusercontent.com']
+  }
 }
 
 export default nextConfig

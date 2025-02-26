@@ -4,6 +4,7 @@ import { siteConfig } from '@/config/site'
 import Particles from '@/components/particles'
 
 export default function Home() {
+  'use memo'
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-linear-to-tl from-black via-zinc-600/20 to-black">
       <Particles

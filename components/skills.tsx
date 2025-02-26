@@ -13,7 +13,7 @@ export default function Skills() {
         </h2>
         <ul className="flex max-w-sm flex-wrap justify-center gap-2 text-balance pt-4 lg:text-xl">
           {skillsData.map((skill, index) => (
-            <li className="rounded-lg border p-2 shadow" key={index}>
+            <li className="rounded-lg border p-2 shadow-sm" key={index}>
               {skill}
             </li>
           ))}

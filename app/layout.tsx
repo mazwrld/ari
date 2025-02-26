@@ -1,23 +1,21 @@
 import '@/styles/globals.css'
 
-import type { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { siteConfig } from '@/config/site'
 import { fontSans } from '@/lib/fonts'
 import cn from '@/lib/utils'
-import SiteHeader from '@/components/site-header'
 import ThemeProvider from '@/components/theme-provider'
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
 }
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     default: '🇨🇦 mazwrld.dev',
     template: `%s - ${siteConfig.name}`,
@@ -53,7 +51,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <SiteHeader />
             {children}
           </ThemeProvider>
           <Analytics />

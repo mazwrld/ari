@@ -12,7 +12,7 @@ export default function Card({ items }: CardProps) {
     <div className="mx-auto mt-10 flex max-w-7xl flex-wrap justify-center gap-4">
       {items?.map((item, index) => {
         return (
-          <div key={index} className="max-w-sm rounded-lg border shadow">
+          <div key={index} className="max-w-sm rounded-lg border shadow-sm">
             <div className="p-4">
               <Image
                 className="rounded"

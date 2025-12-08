@@ -12,14 +12,29 @@ export function useMousePosition(): MousePosition {
   })
 
   useEffect(() => {
+    let rafId: number | null = null
+    let lastX = 0
+    let lastY = 0
+
     const handleMouseMove = (event: MouseEvent) => {
-      setMousePosition({ x: event.clientX, y: event.clientY })
+      // Throttle updates using requestAnimationFrame
+      if (rafId === null) {
+        rafId = requestAnimationFrame(() => {
+          lastX = event.clientX
+          lastY = event.clientY
+          setMousePosition({ x: lastX, y: lastY })
+          rafId = null
+        })
+      }
     }
 
-    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mousemove', handleMouseMove, { passive: true })
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove)
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId)
+      }
     }
   }, [])
 

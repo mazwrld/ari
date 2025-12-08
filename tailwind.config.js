@@ -1,6 +1,29 @@
 const svgToDataUri = require('mini-svg-data-uri')
 const { fontFamily } = require('tailwindcss/defaultTheme')
-const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette')
+
+// Helper function to flatten color palette (compatible with Tailwind v3 and v4)
+let flattenColorPalette
+try {
+  flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette')
+} catch {
+  // Fallback for Tailwind v4
+  flattenColorPalette = (colors) => {
+    const flatten = (obj, prefix = '') => {
+      const result = {}
+      for (const key in obj) {
+        const value = obj[key]
+        const newKey = prefix ? `${prefix}-${key}` : key
+        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+          Object.assign(result, flatten(value, newKey))
+        } else {
+          result[newKey] = value
+        }
+      }
+      return result
+    }
+    return flatten(colors)
+  }
+}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

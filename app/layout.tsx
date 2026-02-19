@@ -51,7 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${fontSans.variable} ${fontDisplay.variable} min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] antialiased`}
+        className={`${fontSans.variable} ${fontDisplay.variable} min-h-screen bg-(--color-bg) text-(--color-text) antialiased`}
       >
         {children}
         <Analytics />

@@ -170,7 +170,7 @@ export default function Home() {
             <div className="reveal flex flex-wrap gap-3 [animation-delay:420ms]">
               <Link
                 href="#work"
-                className="rounded-full border border-[var(--color-accent)] bg-[var(--color-accent-soft)] px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:bg-[rgba(255,43,61,0.45)]"
+                className="rounded-full border border-(--color-accent) bg-(--color-accent-soft) px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:bg-[rgba(255,43,61,0.45)]"
               >
                 View selected work
               </Link>
@@ -343,7 +343,7 @@ export default function Home() {
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <Link
               href="mailto:rexnowa@gmail.com"
-              className="rounded-full border border-[var(--color-accent)] bg-[var(--color-accent-soft)] px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5"
+              className="rounded-full border border-(--color-accent) bg-(--color-accent-soft) px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5"
             >
               mazenmahari@gmail.com
             </Link>

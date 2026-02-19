@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       'Portfolio of Mazen Mahari: IT specialist at Oakwood Roofing building practical websites and internal tools.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#080b12',
-    theme_color: '#080b12',
+    background_color: '#050505',
+    theme_color: '#050505',
     icons: [
       {
         src: '/favicon.ico',

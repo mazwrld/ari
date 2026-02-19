@@ -8,7 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { fontDisplay, fontSans } from '@/lib/fonts'
 
 export const viewport: Viewport = {
-  themeColor: '#080b12',
+  themeColor: '#050505',
   colorScheme: 'dark',
 }
 

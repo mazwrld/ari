@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
       <header className="reveal sticky top-4 z-50 px-4" id="home">
-        <nav className="mx-auto flex w-full max-w-6xl items-center justify-between rounded-full border border-white/15 bg-black/35 px-4 py-3 backdrop-blur-xl md:px-6">
+        <nav className="mx-auto flex w-full max-w-6xl items-center justify-between rounded-full border border-white/30 bg-black/65 px-4 py-3 backdrop-blur-xl md:px-6">
           <Link
             href="#home"
             className="font-display flex items-center gap-2.5 text-[0.74rem] tracking-[0.2em] text-white uppercase"
@@ -120,11 +120,11 @@ export default function Home() {
               alt="Mazen Mahari logo"
               width={28}
               height={28}
-              className="h-7 w-7 rounded-full bg-white/10 object-cover"
+              className="h-7 w-7 rounded-full bg-white/20 object-cover"
             />
             Mazen Mahari
           </Link>
-          <div className="hidden items-center gap-7 text-sm text-white/70 md:flex">
+          <div className="hidden items-center gap-7 text-sm text-white/90 md:flex">
             {navLinks.map((item) => (
               <Link
                 key={item.label}
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
           <Link
             href="mailto:mazenmahari@gmail.com"
-            className="rounded-full border border-white/25 bg-white/5 px-3 py-1.5 text-[0.7rem] tracking-[0.18em] text-white uppercase transition hover:border-white/45 hover:bg-white/10 md:px-4"
+            className="rounded-full border border-white/45 bg-white/12 px-3 py-1.5 text-[0.7rem] tracking-[0.18em] text-white uppercase transition hover:border-white/70 hover:bg-white/20 md:px-4"
           >
             Start a project
           </Link>
@@ -147,12 +147,12 @@ export default function Home() {
       <section className="px-4 pt-16 md:pt-20">
         <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
           <div className="space-y-7 md:space-y-8">
-            <div className="reveal inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-2 text-[0.67rem] tracking-[0.14em] text-white/85 uppercase">
+            <div className="reveal inline-flex w-fit items-center gap-2 rounded-full border border-white/35 bg-white/12 px-3 py-2 text-[0.67rem] tracking-[0.14em] text-white/95 uppercase">
               <span className="h-2 w-2 rounded-full bg-[var(--color-accent-2)] shadow-[0_0_0_6px_var(--color-accent-2-soft)]" />
               Available for practical builds
             </div>
 
-            <p className="section-kicker reveal max-w-xl text-white/60 [animation-delay:120ms]">
+            <p className="section-kicker reveal max-w-xl text-white/80 [animation-delay:120ms]">
               IT Specialist at Oakwood Roofing
             </p>
 
@@ -170,13 +170,13 @@ export default function Home() {
             <div className="reveal flex flex-wrap gap-3 [animation-delay:420ms]">
               <Link
                 href="#work"
-                className="rounded-full border border-[var(--color-accent)] bg-[var(--color-accent-soft)] px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:bg-[rgba(255,122,24,0.34)]"
+                className="rounded-full border border-[var(--color-accent)] bg-[var(--color-accent-soft)] px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:bg-[rgba(255,43,61,0.45)]"
               >
                 View selected work
               </Link>
               <Link
                 href="mailto:mazenmahari@gmail.com"
-                className="rounded-full border border-white/30 bg-white/5 px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/10"
+                className="rounded-full border border-white/45 bg-white/12 px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/20"
               >
                 Send a message
               </Link>
@@ -189,7 +189,7 @@ export default function Home() {
                   className="glass-panel reveal rounded-2xl px-4 py-4 sm:px-5"
                   style={{ animationDelay: `${500 + index * 100}ms` }}
                 >
-                  <dt className="text-[0.65rem] tracking-[0.12em] text-white/55 uppercase">
+                  <dt className="text-[0.65rem] tracking-[0.12em] text-white/78 uppercase">
                     {stat.label}
                   </dt>
                   <dd className="font-display mt-2 text-2xl text-white sm:text-3xl">
@@ -203,7 +203,7 @@ export default function Home() {
           <aside className="glass-panel reveal relative rounded-3xl p-6 [animation-delay:340ms] md:p-8">
             <div className="mb-7 flex items-center justify-between">
               <p className="section-kicker">Current focus</p>
-              <span className="rounded-full border border-white/20 bg-white/5 px-2.5 py-1 text-[0.65rem] tracking-[0.12em] text-white/75 uppercase">
+              <span className="rounded-full border border-white/35 bg-white/12 px-2.5 py-1 text-[0.65rem] tracking-[0.12em] text-white/92 uppercase">
                 2026
               </span>
             </div>
@@ -223,7 +223,7 @@ export default function Home() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-xl border border-white/15 bg-black/25 px-3 py-3 text-sm text-white/80"
+                  className="rounded-xl border border-white/30 bg-black/45 px-3 py-3 text-sm text-white/95"
                 >
                   {item}
                 </div>
@@ -263,7 +263,7 @@ export default function Home() {
                 className="project-card reveal transition-transform duration-300 hover:-translate-y-2"
                 style={{ animationDelay: `${280 + index * 120}ms` }}
               >
-                <p className="section-kicker text-white/60">{project.type}</p>
+                <p className="section-kicker text-white/82">{project.type}</p>
                 <h3 className="font-display mt-3 text-2xl leading-tight text-white">
                   {project.title}
                 </h3>
@@ -275,7 +275,7 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-                <p className="mt-7 text-sm text-white/84">{project.impact}</p>
+                <p className="mt-7 text-sm text-white/95">{project.impact}</p>
               </article>
             ))}
           </div>
@@ -293,7 +293,7 @@ export default function Home() {
               {studioPrinciples.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-2xl border border-white/15 bg-black/20 p-4"
+                  className="rounded-2xl border border-white/28 bg-black/38 p-4"
                 >
                   <h3 className="font-display text-xl text-white">
                     {item.title}
@@ -315,7 +315,7 @@ export default function Home() {
             <div className="mt-8 space-y-6">
               {workflow.map((item) => (
                 <article key={item.step} className="process-step">
-                  <p className="section-kicker text-white/55">
+                  <p className="section-kicker text-white/80">
                     Step {item.step}
                   </p>
                   <h3 className="font-display mt-2 text-2xl text-white">

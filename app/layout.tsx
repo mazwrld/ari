@@ -1,38 +1,46 @@
+import type { Metadata, Viewport } from 'next'
+
 import '@/styles/globals.css'
 
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-import { siteConfig } from '@/config/site'
-import { fontSans } from '@/lib/fonts'
-import cn from '@/lib/utils'
-import ThemeProvider from '@/components/theme-provider'
+import { fontDisplay, fontSans } from '@/lib/fonts'
 
-export const viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+export const viewport: Viewport = {
+  themeColor: '#050505',
+  colorScheme: 'dark',
 }
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://www.mazwrld.dev'),
   title: {
-    default: '🇨🇦 mazwrld.dev',
-    template: `%s - ${siteConfig.name}`,
+    default: 'Mazen Mahari | IT Specialist & Web Builder',
+    template: '%s | Mazen Mahari',
   },
+  description:
+    'Portfolio of Mazen Mahari, IT specialist at Oakwood Roofing building practical websites and internal tools.',
   authors: [
     {
       name: 'Mazen Mahari',
       url: 'https://www.mazwrld.dev/',
     },
   ],
-  description: siteConfig.description,
+  openGraph: {
+    title: 'Mazen Mahari | IT Specialist & Web Builder',
+    description:
+      'Portfolio of Mazen Mahari, currently focused on IT work, website rebuilding, and small custom apps for real workflows.',
+    url: 'https://www.mazwrld.dev/',
+    siteName: 'Mazen Mahari Portfolio',
+    locale: 'en_CA',
+    type: 'website',
+  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
-  manifest: `${siteConfig.url}/manifest.webmanifest`,
+  manifest: '/manifest.webmanifest',
 }
 
 interface RootLayoutProps {
@@ -41,22 +49,14 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head />
-        <body
-          className={cn(
-            'min-h-screen scroll-smooth font-sans antialiased',
-            fontSans.variable
-          )}
-        >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
-          </ThemeProvider>
-          <Analytics />
-          <SpeedInsights />
-        </body>
-      </html>
-    </>
+    <html lang="en">
+      <body
+        className={`${fontSans.variable} ${fontDisplay.variable} min-h-screen bg-(--color-bg) text-(--color-text) antialiased`}
+      >
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
+    </html>
   )
 }

@@ -1,22 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    reactCompiler: true,
-  },
+  reactCompiler: true,
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
-    domains: ['github.com', 'raw.githubusercontent.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/**',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   compress: true,
   poweredByHeader: false,
-  swcMinify: true,
   compiler: {
     removeConsole:
       process.env.NODE_ENV === 'production'

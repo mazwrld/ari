@@ -1,37 +1,26 @@
-# Ari
+# Mazen Portfolio
 
-<p align="center">
-  <img src="public/logo.png" alt="Logo" width="200" height="200">
-</p>
+A fully redesigned one-page portfolio and landing experience built with Next.js (App Router) and Tailwind CSS.
 
-This project is my portfolio website. It is built with Next.js and Tailwind CSS. I'm using [shadcd's](https://ui.shadcn.com/) ui library as a base.
+## Highlights
+
+- Cinematic hero with staggered entrance animation
+- Animated ambient background with layered gradients, grid, and motion orbs
+- Sections for selected work, approach, workflow, and contact
+- Mobile-responsive layout with reduced-motion support
 
 ## Tech Stack
 
-This project is built using:
+- Next.js
+- React
+- Tailwind CSS
+- CSS keyframe animations
 
-- [Next.js](https://nextjs.org/docs/app) (App Router)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-
-## Usage
-
-```sh
-# Clone the repository
-> git clone **REPO LINK**
-
-# Navigate to the directory
-> cd **REPO**
-
-# Install the dependencies
-> pnpm install
-```
-
-## Scripts
+## Local Development
 
 ```sh
-# Start the development server
-> pnpm dev
+pnpm install
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open `http://localhost:3000`.

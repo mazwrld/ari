@@ -8,80 +8,80 @@ const navLinks = [
 ]
 
 const heroStats = [
-  { value: '6+', label: 'Years crafting web products' },
-  { value: '40+', label: 'Projects shipped end-to-end' },
-  { value: '95+', label: 'Lighthouse scores on key builds' },
+  { value: 'Sales IT', label: 'Current IT role' },
+  { value: 'Site Rebuild', label: 'Company website in progress' },
+  { value: 'Custom Apps', label: 'Built for real job workflows' },
 ]
 
 const featuredProjects = [
   {
-    title: 'Oakwood Sales Command Center',
-    type: 'AI + RevOps',
+    title: 'Oakwood Roofing Website Rebuild',
+    type: 'Company Website',
     summary:
-      'Built a lead-to-close command layer that unifies CRM context, sales prompts, and campaign analytics in one operating surface.',
-    impact: '+28% proposal conversion in first quarter',
-    stack: ['Next.js', 'TypeScript', 'Automation', 'Analytics'],
+      'Rebuilding the company website with clearer service pages, cleaner navigation, and a stronger lead flow.',
+    impact: 'In progress with a focus on clarity, speed, and lead quality.',
+    stack: ['Next.js', 'React', 'Tailwind', 'Content Structure'],
   },
   {
-    title: 'Roofing Estimator Experience',
-    type: 'Conversion Design',
+    title: 'Internal Job Tracking Tool',
+    type: 'Custom Internal App',
     summary:
-      'Redesigned the quote journey into a guided decision system with adaptive forms, instant pricing bands, and friction-aware UX.',
-    impact: '-37% drop-off through quote funnel',
-    stack: ['UX Systems', 'Experimentation', 'React', 'Motion Design'],
+      'Built a lightweight app to help a team track task status, notes, and priorities in one place.',
+    impact: 'Gave the team a clearer view of active work and priorities.',
+    stack: ['React', 'TypeScript', 'Forms', 'Internal Ops'],
   },
   {
-    title: 'Growth Landing Framework',
-    type: 'Design System',
+    title: 'Request Intake Helper',
+    type: 'Workflow Utility',
     summary:
-      'Created a modular landing framework with reusable content blocks, motion patterns, and accessibility defaults for rapid campaign launches.',
-    impact: 'From brief to launch in under 48 hours',
-    stack: ['Design Tokens', 'Tailwind', 'Content Ops', 'A/B Testing'],
+      'Created a small internal tool to standardize incoming requests and reduce repetitive back-and-forth.',
+    impact: 'Cut manual admin steps and made follow-up easier.',
+    stack: ['JavaScript', 'Automation', 'Workflow Design', 'Internal Tools'],
   },
 ]
 
 const capabilityTicker = [
-  'Product Design',
-  'Frontend Architecture',
-  'Motion Direction',
-  'Conversion Strategy',
-  'Experiment Loops',
-  'AI Workflow Design',
-  'Performance Engineering',
-  'Design Systems',
-  'User Research',
+  'Frontend Development',
+  'Website Rebuilds',
+  'Internal Tools',
+  'Process Cleanup',
+  'Form Workflows',
+  'UI Improvement',
+  'Basic Analytics',
+  'Performance Basics',
+  'IT Support',
 ]
 
 const studioPrinciples = [
   {
-    title: 'Narrative-first interfaces',
-    text: 'Every screen needs intent. I build interfaces that tell users what matters, fast.',
+    title: 'Clarity first',
+    text: 'I build straightforward interfaces that help people complete tasks without confusion.',
   },
   {
-    title: 'Motion with meaning',
-    text: 'Animation is used as guidance, hierarchy, and delight. Never decoration for its own sake.',
+    title: 'Built for real work',
+    text: 'Most projects start from daily workflow pain points and focus on practical improvements.',
   },
   {
-    title: 'Performance as a design feature',
-    text: 'Speed and responsiveness are part of the visual language, not an afterthought.',
+    title: 'Ship and improve',
+    text: 'I launch a useful first version, gather feedback, and keep iterating.',
   },
 ]
 
 const workflow = [
   {
     step: '01',
-    title: 'Frame the opportunity',
-    text: 'Map user friction, business targets, and product constraints into one clear problem statement.',
+    title: 'Understand the workflow',
+    text: 'I map the current process, where it breaks down, and what a better flow should look like.',
   },
   {
     step: '02',
-    title: 'Prototype the system',
-    text: 'Design and ship a high-fidelity vertical slice to validate direction and technical feasibility.',
+    title: 'Build a practical first version',
+    text: 'I ship something usable quickly, then tighten the UX and structure as feedback comes in.',
   },
   {
     step: '03',
-    title: 'Launch and evolve',
-    text: 'Roll out with instrumentation, iterate on real behavior, and scale patterns across the product.',
+    title: 'Improve through use',
+    text: 'After launch, I fix friction points, refine content, and keep the system easier to maintain.',
   },
 ]
 
@@ -91,7 +91,6 @@ const socialLinks = [
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/mazen-mahari-63958717a/',
   },
-  { label: 'X', href: 'https://twitter.com/mazenwrld' },
 ]
 
 export default function Home() {
@@ -150,22 +149,22 @@ export default function Home() {
           <div className="space-y-7 md:space-y-8">
             <div className="reveal inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-2 text-[0.67rem] tracking-[0.14em] text-white/85 uppercase">
               <span className="h-2 w-2 rounded-full bg-[var(--color-accent-2)] shadow-[0_0_0_6px_var(--color-accent-2-soft)]" />
-              Open for high-impact builds
+              Available for practical builds
             </div>
 
             <p className="section-kicker reveal max-w-xl text-white/60 [animation-delay:120ms]">
-              Senior Frontend Engineer and Product Designer
+              IT Specialist at Oakwood Roofing
             </p>
 
             <h1 className="font-display reveal max-w-4xl text-5xl leading-[0.98] [animation-delay:220ms] sm:text-6xl md:text-7xl">
-              I design and engineer digital experiences that feel cinematic,
-              fast, and built to convert.
+              I build practical websites and internal tools that make everyday
+              work easier.
             </h1>
 
             <p className="section-copy reveal max-w-2xl text-base [animation-delay:320ms]">
-              I partner with ambitious teams to turn rough ideas into polished
-              product moments. My focus sits at the intersection of interface
-              craft, growth strategy, and pragmatic engineering.
+              I currently handle IT at Oakwood Roofing and I&apos;m rebuilding
+              our website. I&apos;ve also built small custom apps for my jobs to
+              help teams move faster and stay organized.
             </p>
 
             <div className="reveal flex flex-wrap gap-3 [animation-delay:420ms]">
@@ -179,7 +178,7 @@ export default function Home() {
                 href="mailto:mazenmahari@gmail.com"
                 className="rounded-full border border-white/30 bg-white/5 px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/10"
               >
-                Book intro call
+                Send a message
               </Link>
             </div>
 
@@ -209,18 +208,18 @@ export default function Home() {
               </span>
             </div>
             <h2 className="font-display max-w-xs text-3xl leading-tight text-white sm:text-4xl">
-              Product-led growth through smarter UX systems.
+              Rebuilding Oakwood&apos;s web presence while improving internal
+              workflows.
             </h2>
             <p className="section-copy mt-4 text-sm">
-              Leading initiatives that combine AI-enabled workflows, cleaner
-              user journeys, and conversion-focused frontends for service-based
-              businesses.
+              My day-to-day work blends IT support with hands-on frontend
+              building, focused on tools and pages that are useful for the team.
             </p>
             <div className="mt-8 space-y-3">
               {[
-                'Designing multi-step sales flows with adaptive logic',
-                'Shipping analytics-ready landing systems for rapid testing',
-                'Improving team velocity with reusable frontend architecture',
+                'Leading the Oakwood Roofing website rebuild',
+                'Building small internal apps to reduce manual tasks',
+                'Handling daily IT support while shipping improvements',
               ].map((item) => (
                 <div
                   key={item}
@@ -250,11 +249,11 @@ export default function Home() {
         <div className="mx-auto w-full max-w-6xl">
           <p className="section-kicker reveal">Selected work</p>
           <h2 className="section-title reveal mt-3 max-w-3xl text-4xl [animation-delay:120ms] sm:text-5xl md:text-6xl">
-            Premium product execution with measurable business outcomes.
+            Recent projects grounded in day-to-day business needs.
           </h2>
           <p className="section-copy reveal mt-4 max-w-2xl text-base [animation-delay:220ms]">
-            A sample of problem spaces where design, engineering, and growth
-            strategy had to move as one system.
+            A sample of the website and internal tool work I&apos;ve done across
+            my roles.
           </p>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -288,7 +287,7 @@ export default function Home() {
           <div className="glass-panel reveal rounded-3xl p-6 md:p-8">
             <p className="section-kicker">Approach</p>
             <h2 className="section-title mt-3 text-4xl sm:text-5xl">
-              Design taste plus production rigor.
+              Keep it simple, useful, and shippable.
             </h2>
             <div className="mt-7 space-y-4">
               {studioPrinciples.map((item) => (
@@ -311,7 +310,7 @@ export default function Home() {
           >
             <p className="section-kicker">Workflow</p>
             <h2 className="section-title mt-3 text-4xl sm:text-5xl">
-              From signal to shipped result.
+              How I usually work.
             </h2>
             <div className="mt-8 space-y-6">
               {workflow.map((item) => (
@@ -334,16 +333,16 @@ export default function Home() {
         <div className="contact-shell reveal mx-auto w-full max-w-6xl p-7 md:p-10">
           <p className="section-kicker">Contact</p>
           <h2 className="section-title mt-3 max-w-3xl text-4xl sm:text-5xl md:text-6xl">
-            If you are building something ambitious, I can help shape and ship
+            If you need a practical website or internal tool, I can help build
             it.
           </h2>
           <p className="section-copy mt-4 max-w-2xl text-base">
-            Available for select collaborations across product design, frontend
-            engineering, and conversion-focused growth work.
+            Best fit for small teams that want cleaner workflows, better web
+            pages, and steady technical support.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <Link
-              href="mailto:mazenmahari@gmail.com"
+              href="mailto:rexnowa@gmail.com"
               className="rounded-full border border-[var(--color-accent)] bg-[var(--color-accent-soft)] px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5"
             >
               mazenmahari@gmail.com

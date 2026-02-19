@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+
 import '@/styles/globals.css'
 
 import { Analytics } from '@vercel/analytics/react'
@@ -14,11 +15,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mazwrld.dev'),
   title: {
-    default: 'Mazen Mahari | Product Engineer',
+    default: 'Mazen Mahari | IT Specialist & Web Builder',
     template: '%s | Mazen Mahari',
   },
   description:
-    'Cinematic, high-performance product experiences engineered by Mazen Mahari.',
+    'Portfolio of Mazen Mahari, IT specialist at Oakwood Roofing building practical websites and internal tools.',
   authors: [
     {
       name: 'Mazen Mahari',
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: 'Mazen Mahari | Product Engineer',
+    title: 'Mazen Mahari | IT Specialist & Web Builder',
     description:
-      'Portfolio of Mazen Mahari, focused on frontend systems, product design, and growth-driven digital experiences.',
+      'Portfolio of Mazen Mahari, currently focused on IT work, website rebuilding, and small custom apps for real workflows.',
     url: 'https://www.mazwrld.dev/',
     siteName: 'Mazen Mahari Portfolio',
     locale: 'en_CA',

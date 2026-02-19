@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Mazen Mahari Portfolio',
     short_name: 'Mazen',
     description:
-      'Portfolio of Mazen Mahari: product design, frontend engineering, and growth-focused digital experiences.',
+      'Portfolio of Mazen Mahari: IT specialist at Oakwood Roofing building practical websites and internal tools.',
     start_url: '/',
     display: 'standalone',
     background_color: '#080b12',

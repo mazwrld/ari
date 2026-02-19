@@ -37,11 +37,27 @@
   body {
     margin: 0;
     overflow-x: clip;
-    background:
-      radial-gradient(circle at 8% -8%, rgba(255, 43, 61, 0.26) 0%, transparent 42%),
-      radial-gradient(circle at 88% 8%, rgba(255, 255, 255, 0.12) 0%, transparent 38%),
-      radial-gradient(circle at 50% 120%, rgba(150, 15, 28, 0.2) 0%, transparent 40%),
-      linear-gradient(160deg, var(--color-bg) 0%, var(--color-bg-2) 58%, #020202 100%);
+    background: radial-gradient(
+        circle at 8% -8%,
+        rgba(255, 43, 61, 0.26) 0%,
+        transparent 42%
+      ),
+      radial-gradient(
+        circle at 88% 8%,
+        rgba(255, 255, 255, 0.12) 0%,
+        transparent 38%
+      ),
+      radial-gradient(
+        circle at 50% 120%,
+        rgba(150, 15, 28, 0.2) 0%,
+        transparent 40%
+      ),
+      linear-gradient(
+        160deg,
+        var(--color-bg) 0%,
+        var(--color-bg-2) 58%,
+        #020202 100%
+      );
     color: var(--color-text);
     font-family: var(--font-sans), 'Helvetica Neue', Arial, sans-serif;
     font-feature-settings:
@@ -63,7 +79,8 @@
 
 @layer components {
   .font-display {
-    font-family: var(--font-display), 'Arial Black', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-display), 'Arial Black', 'Helvetica Neue',
+      sans-serif;
     letter-spacing: -0.02em;
   }
 
@@ -90,8 +107,11 @@
   .portfolio-background {
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(circle at 50% 4%, rgba(255, 255, 255, 0.05) 0%, transparent 45%),
+    background: radial-gradient(
+        circle at 50% 4%,
+        rgba(255, 255, 255, 0.05) 0%,
+        transparent 45%
+      ),
       linear-gradient(180deg, transparent 0%, rgba(4, 2, 3, 0.9) 100%);
   }
 
@@ -99,8 +119,11 @@
     position: absolute;
     inset: 0;
     opacity: 0.2;
-    background-image:
-      linear-gradient(to right, rgba(235, 245, 255, 0.1) 1px, transparent 1px),
+    background-image: linear-gradient(
+        to right,
+        rgba(235, 245, 255, 0.1) 1px,
+        transparent 1px
+      ),
       linear-gradient(to bottom, rgba(235, 245, 255, 0.1) 1px, transparent 1px);
     background-size: 72px 72px;
     mask-image: radial-gradient(circle at 50% 45%, black 24%, transparent 82%);
@@ -173,7 +196,8 @@
   }
 
   .section-title {
-    font-family: var(--font-display), 'Arial Black', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-display), 'Arial Black', 'Helvetica Neue',
+      sans-serif;
     letter-spacing: -0.02em;
     line-height: 1.05;
   }
@@ -188,7 +212,13 @@
     border: 1px solid var(--color-line-strong);
     border-radius: 9999px;
     background: rgba(15, 8, 11, 0.84);
-    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
   }
 
   .ticker-track {

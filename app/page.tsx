@@ -136,7 +136,7 @@ export default function Home() {
             ))}
           </div>
           <Link
-            href="mailto:mazenmahari@gmail.com"
+            href="mailto:rexnowa@gmail.com"
             className="rounded-full border border-white/45 bg-white/12 px-3 py-1.5 text-[0.7rem] tracking-[0.18em] text-white uppercase transition hover:border-white/70 hover:bg-white/20 md:px-4"
           >
             Start a project
@@ -175,7 +175,7 @@ export default function Home() {
                 View selected work
               </Link>
               <Link
-                href="mailto:mazenmahari@gmail.com"
+                href="mailto:rexnowa@gmail.com"
                 className="rounded-full border border-white/45 bg-white/12 px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/20"
               >
                 Send a message
